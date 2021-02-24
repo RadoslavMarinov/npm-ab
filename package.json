@@ -1,0 +1,54 @@
+{
+  "name": "ab",
+  "version": "1.0.0",
+  "description": "A benchmark tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test-all",
+    "blanket": {
+      "pattern": "ab/lib",
+      "data-cover-flags": {
+        "debug": false
+      }
+    },
+    "travis-cov": {
+      "threshold": 90
+    }
+  },
+  "dependencies": {
+    "debug": "~2.6.7",
+    "microtime-nodejs": "latest"
+  },
+  "devDependencies": {
+    "autod": "*",
+    "blanket": "*",
+    "contributors": "*",
+    "coveralls": "*",
+    "mocha": "*",
+    "mocha-lcov-reporter": "*",
+    "should": "~4.0.4",
+    "travis-cov": "*"
+  },
+  "homepage": "https://github.com/node-modules/ab",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/node-modules/ab.git",
+    "web": "https://github.com/node-modules/ab"
+  },
+  "bugs": {
+    "url": "https://github.com/node-modules/ab/issues",
+    "email": "fengmk2@gmail.com"
+  },
+  "keywords": [
+    "ab"
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "author": {
+    "name": "fengmk2",
+    "email": "fengmk2@gmail.com",
+    "url": "http://fengmk2.github.com"
+  },
+  "license": "MIT"
+}
